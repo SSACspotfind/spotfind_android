@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpotfindResult">
+
+    <ImageView
+        android:id="@+id/img_v_result_spotimg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_v_result_spotname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+
+    <TextView
+        android:id="@+id/txt_v_result_spotname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="관광지명 : XXXXXX"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_v_result_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_v_result_spotimg" />
+
+    <TextView
+        android:id="@+id/txt_v_result_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:text="위치 : XXXXXX"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_search_youtube"
+        app:layout_constraintStart_toStartOf="@+id/txt_v_result_spotname"
+        app:layout_constraintTop_toBottomOf="@+id/txt_v_result_spotname" />
+
+    <Button
+        android:id="@+id/btn_search_youtube"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="관광지 정보 유튜브로 확인하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_v_result_location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
